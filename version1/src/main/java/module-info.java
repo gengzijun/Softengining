@@ -14,6 +14,7 @@ module com.example.version1 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires org.apache.commons.csv;
 
     opens com.example.version1 to javafx.fxml;
     exports com.example.version1;

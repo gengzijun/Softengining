@@ -58,3 +58,4 @@ public class SavingGoalPage extends Application {
         launch(args);// Launch the application
     }
 }
+
