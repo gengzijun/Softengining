@@ -1,0 +1,188 @@
+Date,Detail,Amount,Type
+2024/6/1 23:45,Meituan,17.60,Null
+2024/6/1 17:11,DMALL,1.50,Shopping
+2024/6/1 15:50,Jiachen,83.00,Living
+2024/6/1 8:40,ICBC,8000,Income
+2024/5/31 18:32,BUPT,16.00,Catering
+2024/5/30 17:11,Tencent,15.00,Entertainment
+2024/5/30 11:56,BUPT,3.00,Catering
+2024/5/30 11:53,BUPT,17.00,Catering
+2024/5/29 22:23,Meituan,26.50,Catering
+2024/5/29 17:33,DMALL,4.90,Shopping
+2024/5/29 10:42,Meituan,142.50,Catering
+2024/5/28 23:16,Fruit shop,12.00,Shopping
+2024/5/28 19:49,Wumart,6.40,Shopping
+2024/5/28 19:00,SF Express,19.80,Living
+2024/5/27 21:00,Beijing All-in-One Card,20.00,Living
+2024/5/27 11:46,DMALL,3.80,Shopping
+2024/5/27 11:20,BUPT,13.60,Catering
+2024/5/26 22:09,Beijing All-in-One Card,20.00,Living
+2024/5/26 21:42,Chalet barbecue,344.80,Catering
+2024/5/24 22:03,DMALL,10.90,Shopping
+2024/5/24 16:01,DMALL,8.50,Shopping
+2024/5/24 12:13,DMALL,4.90,Shopping
+2024/5/23 18:39,Fruit shop,9.40,Shopping
+2024/5/23 12:14,BUPT,200.00,Living
+2024/5/23 12:09,BUPT,12.60,Catering
+2024/5/22 23:23,Fruit shop,12.00,Shopping
+2024/5/22 18:00,DMALL,3.00,Shopping
+2024/5/22 13:42,BUPT,3.00,Catering
+2024/5/22 13:42,BUPT,15.00,Catering
+2024/5/21 13:05,Fahai Temple,320.00,Entertainment
+2024/5/21 11:44,DMALL,14.90,Shopping
+2024/5/19 16:10,Gzz,40.00,Living
+2024/5/18 19:08,Fruit shop,11.00,Shopping
+2024/5/17 18:37,Fruit shop,7.00,Shopping
+2024/5/15 18:25,BUPT,200.00,Living
+2024/5/14 21:18,Weizhen,2.70,Living
+2024/5/11 23:00,DMALL,8.50,Shopping
+2024/5/11 16:46,DMALL,1.99,Shopping
+2024/5/9 15:58,Yueshijia,503.00,Catering
+2024/5/8 16:29,DMALL,17.90,Shopping
+2024/5/8 12:26,DMALL,4.90,Shopping
+2024/5/7 23:17,DMALL,23.70,Shopping
+2024/5/7 14:10,BUPT,200.00,Living
+2024/5/7 14:10,Yihui,9.00,Living
+2024/5/6 23:16,Hutiujun pancakes,9.00,Catering
+2024/5/5 21:40,Jiachen,176.00,Living
+2024/5/5 12:03,BUPT,18.00,Catering
+2024/5/5 11:58,BUPT,2.00,Catering
+2024/5/4 21:57,Yihui,127.00,Living
+2024/5/3 21:28,Jiachen,202.00,Living
+2024/5/3 17:47,Shiao,6.00,Shopping
+2024/5/3 16:16,Beijing All-in-One Card,20.00,Living
+2024/5/3 9:48,BUPT,4.50,Catering
+2024/5/2 19:28,BUPT,2.00,Catering
+2024/5/2 19:22,BUPT,14.00,Catering
+2024/5/2 15:49,JD,35.50,Shopping
+2024/5/1 8:40,ICBC,8000,Income
+2024/4/30 23:29,Fruit shop,3.90,Shopping
+2024/4/30 23:27,DMALL,6.50,Shopping
+2024/4/29 17:29,Tencent,15.00,Entertainment
+2024/4/28 17:47,DMALL,1.00,Shopping
+2024/4/25 12:43,BUPT,200.00,Living
+2024/4/25 12:42,BUPT,11.00,Catering
+2024/4/24 22:35,Xiaohongshu,0.10,Entertainment
+2024/4/24 22:31,Xiaohongshu,1.00,Entertainment
+2024/4/24 19:15,Jiangutou,26.00,Catering
+2024/4/24 13:01,DMALL,7.50,Shopping
+2024/4/24 12:38,BUPT,12.00,Catering
+2024/4/23 11:53,McDonald's,13.90,Catering
+2024/4/22 13:56,DMALL,3.00,Shopping
+2024/4/21 17:03,YC,135.00,Entertainment
+2024/4/21 15:38,Mingxin,6.66,Living
+2024/4/21 12:10,Meituan,28.98,Catering
+2024/4/20 23:05,Jiachen,68.00,Living
+2024/4/20 14:57,CNKI,4.50,Living
+2024/4/20 12:23,Missa Ice City,5.00,Catering
+2024/4/20 11:53,Beef noodles,22.00,Catering
+2024/4/19 23:17,Fruit shop,4.90,Shopping
+2024/4/19 20:04,Meituan,32.40,Catering
+2024/4/18 12:20,BUPT,34.00,Catering
+2024/4/17 23:04,Meituan,24.98,Catering
+2024/4/15 18:40,Fruit shop,13.00,Shopping
+2024/4/14 23:14,DMALL,13.90,Shopping
+2024/4/14 20:32,Gzz,40.00,Living
+2024/4/14 19:50,DMALL,8.90,Shopping
+2024/4/14 13:03,DMALL,9.90,Shopping
+2024/4/14 12:58,Weizhen,1.20,Living
+2024/4/13 19:17,Fruit shop,2.70,Shopping
+2024/4/13 18:47,Sheep Soup House,20.00,Catering
+2024/4/13 16:45,Zheyun,8.00,Living
+2024/4/13 13:29,Missa Ice City,10.00,Catering
+2024/4/13 13:10,Jiangutou,26.00,Catering
+2024/4/12 15:34,Hospital,1.00,Contingency
+2024/4/11 23:15,DMALL,65.00,Shopping
+2024/4/11 12:20,Fruit shop,10.00,Shopping
+2024/4/11 11:54,BUPT,200.00,Living
+2024/4/11 11:52,BUPT,13.00,Catering
+2024/4/11 11:08,Xiaohongshu,6.60,Entertainment
+2024/4/10 23:04,DMALL,17.90,Shopping
+2024/4/10 21:52,KFC,43.60,Catering
+2024/4/10 19:09,Meituan,75.80,Catering
+2024/4/10 14:29,Lama temple,12.00,Entertainment
+2024/4/10 13:52,Fried noodles,25.00,Catering
+2024/4/10 13:17,Dahuange,11.00,Entertainment
+2024/4/10 9:47,BUPT,6.00,Catering
+2024/4/9 9:46,BUPT,2.00,Catering
+2024/4/9 9:45,BUPT,3.50,Catering
+2024/4/8 9:34,Weizhen,1.80,Living
+2024/4/7 16:49,Meituan,28.20,Catering
+2024/4/7 10:37,Beef noodles,15.00,Catering
+2024/4/6 13:10,Aviation restaurant supermarket,5.00,Shopping
+2024/4/6 12:43,Wonton House,18.00,Catering
+2024/4/4 11:38,Capcut,30.00,Entertainment
+2024/4/3 21:51,Aviation restaurant supermarket,8.00,Shopping
+2024/4/2 18:51,DMALL,14.80,Shopping
+2024/4/2 18:49,Luxihe,44.64,Shopping
+2024/4/2 14:27,BUPT,100.00,Living
+2024/4/2 11:26,Ele,13.80,Catering
+2024/4/1 22:02,Weizhen,0.25,Living
+2024/4/1 18:11,DMALL,13.80,Shopping
+2024/4/1 17:50,BUPT,18.00,Catering
+2024/4/1 11:18,Mouthful pancakes,12.00,Catering
+2024/4/1 8:40,ICBC,8000,Income
+2024/3/31 18:26,Beef noodles,16.00,Catering
+2024/3/31 13:11,DMALL,5.00,Shopping
+2024/3/31 13:08,BUPT,12.00,Catering
+2024/3/30 21:33,Yihui,33.00,Living
+2024/3/30 12:27,BUPT,16.00,Catering
+2024/3/29 21:25,Yihui,12.90,Living
+2024/3/29 21:18,Fruit shop,11.40,Shopping
+2024/3/29 19:37,Meituan,26.98,Catering
+2024/3/29 17:42,Tencent,15.00,Entertainment
+2024/3/28 17:30,Fruit shop,10.00,Shopping
+2024/3/27 23:04,Meituan,26.79,Catering
+2024/3/27 17:56,McDonald's,13.90,Catering
+2024/3/27 12:42,Fruit shop,10.00,Shopping
+2024/3/27 12:19,BUPT,12.00,Catering
+2024/3/26 18:50,DMALL,6.50,Shopping
+2024/3/24 23:29,Fruit shop,4.00,Shopping
+2024/3/24 12:37,Jiangutou,26.00,Catering
+2024/3/23 18:07,Fenglan,3.50,Shopping
+2024/3/23 17:47,Sliced noodles,18.00,Catering
+2024/3/23 17:32,Missa Ice City,5.00,Catering
+2024/3/23 11:37,Meituan,27.99,Catering
+2024/3/23 1:18,JD,89.00,Shopping
+2024/3/22 18:19,DMALL,1.30,Shopping
+2024/3/22 17:55,BUPT,3.00,Catering
+2024/3/22 17:43,BUPT,17.00,Catering
+2024/3/22 12:47,DMALL,5.00,Shopping
+2024/3/22 10:47,YC,45.00,Entertainment
+2024/3/21 18:25,BUPT,200.00,Living
+2024/3/20 22:47,Fruit shop,10.00,Shopping
+2024/3/19 21:16,Hospital,4.17,Contingency
+2024/3/19 21:10,Hospital,1.00,Contingency
+2024/3/19 20:14,Gzz,45.00,Living
+2024/3/19 18:59,Missa Ice City,16.00,Catering
+2024/3/18 18:33,Fruit shop,10.00,Shopping
+2024/3/16 12:54,Fruit shop,13.80,Shopping
+2024/3/15 23:53,Gzz,78.00,Living
+2024/3/15 15:53,McDonald's,13.90,Catering
+2024/3/15 11:57,DMALL,5.00,Shopping
+2024/3/14 17:43,BUPT,200.00,Living
+2024/3/14 17:42,BUPT,11.00,Catering
+2024/3/13 9:54,Meituan,30.60,Catering
+2024/3/12 18:28,Yihui,14.50,Living
+2024/3/12 17:54,Jinguyuan Dumpling,77.00,Catering
+2024/3/12 12:23,Weizhen,0.30,Living
+2024/3/12 11:06,Meituan,40.36,Catering
+2024/3/11 23:11,DMALL,3.80,Shopping
+2024/3/11 10:55,Hospital,1.00,Contingency
+2024/3/10 23:19,DMALL,9.90,Shopping
+2024/3/10 12:23,Fruit shop,10.00,Shopping
+2024/3/9 16:58,PDD,1.68,Shopping
+2024/3/8 16:46,Red packets,41.00,Entertainment
+2024/3/8 15:36,Fruit shop,10.00,Shopping
+2024/3/8 15:34,Huiguan,10.00,Living
+2024/3/7 17:59,JD,119.00,Shopping
+2024/3/7 16:53,McDonald's,13.90,Catering
+2024/3/7 13:03,Hospital,50.00,Contingency
+2024/3/6 18:17,Fruit shop,14.70,Shopping
+2024/3/5 18:56,Fruit shop,11.50,Shopping
+2024/3/4 18:25,BUPT,200.00,Living
+2024/3/4 12:49,DMALL,5.00,Shopping
+2024/3/2 19:39,Luxihe,21.90,Shopping
+2024/3/1 19:47,Meituan,26.78,Catering
+2024/3/1 19:40,Meituan,24.28,Catering
+2024/3/1 8:40,ICBC,8000,Income

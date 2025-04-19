@@ -17,23 +17,14 @@ public class Record {
         this.date = new SimpleStringProperty(date);
     }
 
-    public String getTask() {
-        return task.get();
-    }
+    public String getTask() { return task.get(); }
+    public String getDetail() { return detail.get(); }
+    public String getType() { return type.get(); }
+    public String getAmount() { return amount.get(); }
+    public String getDate() { return date.get(); }
 
-    public String getDetail() {
-        return detail.get();
-    }
-
-    public String getType() {
-        return type.get();
-    }
-
-    public String getAmount() {
-        return amount.get();
-    }
-
-    public String getDate() {
-        return date.get();
+    @Override
+    public String toString() {
+        return task.get() + " " + detail.get() + " " + type.get() + " " + amount.get() + " " + date.get();
     }
 }

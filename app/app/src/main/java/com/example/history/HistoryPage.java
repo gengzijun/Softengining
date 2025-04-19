@@ -18,6 +18,8 @@ import javafx.stage.Stage;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
+import javafx.scene.control.TableCell;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -39,25 +41,29 @@ public class HistoryPage {
     }
 
     public Scene getScene() {
-         /* ——— 左侧导航栏 ——— */
-         TextField searchField = new TextField();
-         ComboBox<String> comboBox = new ComboBox<>();
- 
-         VBox leftPane = new VBox(20);
-         leftPane.setStyle("-fx-background-color: rgb(238,223,207);");
-         leftPane.setPadding(new Insets(20));
- 
-         Label title = new Label("Tally app");
-         title.setFont(new Font("Arial", 20));
-         title.setStyle("-fx-font-weight: bold; -fx-cursor: hand;");
-         /* 点击标题返回 MainPage */
-         title.setOnMouseClicked(e -> {
-             stage.setTitle("main page");
-             stage.setScene(mainpage.getScene());
-         });
+        TextField searchField = new TextField();
+        ComboBox<String> comboBox = new ComboBox<>();
+
+        VBox leftPane = new VBox(20);
+        leftPane.setStyle("-fx-background-color: rgb(238,223,207);");
+        leftPane.setPadding(new Insets(20));
+
+        Label title = new Label("< Previous");
+        title.setFont(new Font("Arial", 20));
+        title.setStyle(
+                "-fx-font-weight: bold; " +
+                        "-fx-cursor: hand; " +
+                        "-fx-border-color: black; " +
+                        "-fx-border-width: 1px; " +
+                        "-fx-border-radius: 5px; " +
+                        "-fx-padding: 5px;");
+
+        title.setOnMouseClicked(e -> {
+            stage.setTitle("main page");
+            stage.setScene(mainpage.getScene());
+        });
 
         VBox menuList = new VBox(10);
-
         for (String month : Month.month_list) {
             HBox item = new HBox(10);
             item.setPadding(new Insets(10));
@@ -74,10 +80,9 @@ public class HistoryPage {
                 System.out.println("点击了月份：" + month);
                 ObservableList<Record> newData = loadCSVData(month);
                 table.setItems(newData);
-                originalData = FXCollections.observableArrayList(newData); // 保存原始数据
-                // 每次点击月份时，清空搜索框并重置筛选类别
+                originalData = FXCollections.observableArrayList(newData);
                 searchField.clear();
-                comboBox.setValue("All information"); // Reset to "All information"
+                comboBox.setValue("All information");
             });
 
             menuList.getChildren().add(item);
@@ -85,8 +90,6 @@ public class HistoryPage {
 
         leftPane.getChildren().addAll(title, menuList);
 
-        // 右侧
-        // 右上
         VBox rightPane = new VBox();
         VBox topSection = new VBox(10);
         topSection.setStyle("-fx-background-color:rgb(239, 230, 220);");
@@ -97,13 +100,12 @@ public class HistoryPage {
         comboBox.getItems().addAll("All information", "Task", "Detail", "Type", "Amount", "Date");
         comboBox.setPromptText("All information");
         comboBox.setStyle(
-                "-fx-background-color: white;" + // 背景白色
-                        "-fx-border-color: #ccc;" + // 灰色边框
-                        "-fx-border-radius: 8;" + // 圆角
-                        "-fx-background-radius: 8;" + // 背景圆角
-                        "-fx-padding: 5 10 5 10;" + // 内边距
-                        "-fx-font-size: 14px;" // 字体大小
-        );
+                "-fx-background-color: white;" +
+                        "-fx-border-color: #ccc;" +
+                        "-fx-border-radius: 8;" +
+                        "-fx-background-radius: 8;" +
+                        "-fx-padding: 5 10 5 10;" +
+                        "-fx-font-size: 14px;");
 
         searchField.setPromptText("Search tickets...");
         searchField.setPrefHeight(36);
@@ -128,33 +130,52 @@ public class HistoryPage {
         topSection.getChildren().addAll(titleLabel, searchBar);
         topSection.setPadding(new Insets(20, 0, 10, 10));
 
-        // 右下
         table.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
         table.setPlaceholder(new Label(""));
+
+        // 清除旧列，防止重复添加
+        table.getColumns().clear();
 
         TableColumn<Record, String> taskCol = new TableColumn<>("Task");
         taskCol.setCellValueFactory(new PropertyValueFactory<>("task"));
         taskCol.setStyle("-fx-alignment: CENTER-LEFT; -fx-font-weight: bold; -fx-text-fill: #333;");
 
+        TableColumn<Record, String> dateCol = new TableColumn<>("Date");
+        dateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
+        dateCol.setStyle("-fx-alignment: CENTER; -fx-font-weight: bold; -fx-text-fill: #333;");
+
         TableColumn<Record, String> detailCol = new TableColumn<>("Detail");
         detailCol.setCellValueFactory(new PropertyValueFactory<>("detail"));
         detailCol.setStyle("-fx-alignment: CENTER-LEFT; -fx-font-weight: bold; -fx-text-fill: #333;");
+
+        TableColumn<Record, String> amountCol = new TableColumn<>("Amount");
+        amountCol.setCellValueFactory(new PropertyValueFactory<>("amount"));
+        amountCol.setCellFactory(col -> new TableCell<>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                    setStyle("");
+                } else {
+                    Record record = getTableView().getItems().get(getIndex());
+                    if (record.getType().equalsIgnoreCase("Income")) {
+                        setText("￥" + item);
+                        setStyle("-fx-text-fill: green; -fx-font-weight: bold;");
+                    } else {
+                        setText("-￥" + item);
+                        setStyle("-fx-text-fill: black; -fx-font-weight: normal;");
+                    }
+                }
+            }
+        });
+        amountCol.setStyle("-fx-alignment: CENTER;");
 
         TableColumn<Record, String> typeCol = new TableColumn<>("Type");
         typeCol.setCellValueFactory(new PropertyValueFactory<>("type"));
         typeCol.setStyle("-fx-alignment: CENTER; -fx-font-weight: bold; -fx-text-fill: #333;");
 
-        TableColumn<Record, String> amountCol = new TableColumn<>("Amount");
-        amountCol.setCellValueFactory(new PropertyValueFactory<>("amount"));
-        amountCol.setStyle("-fx-alignment: CENTER; -fx-font-weight: bold; -fx-text-fill: #333;");
-
-        TableColumn<Record, String> dateCol = new TableColumn<>("Date");
-        dateCol.setCellValueFactory(new PropertyValueFactory<>("date"));
-        dateCol.setStyle("-fx-alignment: CENTER; -fx-font-weight: bold; -fx-text-fill: #333;");
-
-        if (table.getColumns().isEmpty()) {
-            table.getColumns().addAll(taskCol, detailCol, typeCol, amountCol, dateCol);
-        }
+        table.getColumns().addAll(taskCol, detailCol, typeCol, amountCol, dateCol);
 
         table.setStyle("""
                     -fx-background-color: white;
@@ -163,20 +184,22 @@ public class HistoryPage {
                     -fx-font-size: 14px;
                 """);
 
-        table.setRowFactory(tv -> {
-            return new TableRow<>() {
-                @Override
-                protected void updateItem(Record item, boolean empty) {
-                    super.updateItem(item, empty);
-                    if (empty || item == null) {
-                        setStyle("-fx-background-color: white;");
-                    } else {
-                        setStyle("-fx-background-color: white; -fx-padding: 12 10;");
-                        setOnMouseEntered(e -> setStyle("-fx-background-color: #f8f8f8; -fx-padding: 12 10;"));
-                        setOnMouseExited(e -> setStyle("-fx-background-color: white; -fx-padding: 12 10;"));
-                    }
+        table.setRowFactory(tv -> new TableRow<>() {
+            @Override
+            protected void updateItem(Record item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setStyle(
+                            "-fx-background-color: white; -fx-border-color: transparent transparent #ddd transparent; -fx-border-width: 0 0 1px 0;");
+                } else {
+                    setStyle(
+                            "-fx-background-color: white; -fx-padding: 12 10; -fx-border-color: transparent transparent #ddd transparent; -fx-border-width: 0 0 1px 0;");
+                    setOnMouseEntered(e -> setStyle(
+                            "-fx-background-color: #f8f8f8; -fx-padding: 12 10; -fx-border-color: transparent transparent #ddd transparent; -fx-border-width: 0 0 1px 0;"));
+                    setOnMouseExited(e -> setStyle(
+                            "-fx-background-color: white; -fx-padding: 12 10; -fx-border-color: transparent transparent #ddd transparent; -fx-border-width: 0 0 1px 0;"));
                 }
-            };
+            }
         });
 
         VBox contentArea = new VBox(table);
@@ -197,7 +220,6 @@ public class HistoryPage {
         VBox.setVgrow(proportionBox, Priority.ALWAYS);
 
         HBox rootLayout = new HBox(leftPane, rightPane);
-
         HBox.setHgrow(leftPane, Priority.ALWAYS);
         HBox.setHgrow(rightPane, Priority.ALWAYS);
 
@@ -212,16 +234,23 @@ public class HistoryPage {
 
     private ObservableList<Record> loadCSVData(String month) {
         ObservableList<Record> data = FXCollections.observableArrayList();
-        String filePath = "data/" + month + ".csv";
+        String filePath = "app/src/main/resources/data/save_data/" + month + ".csv";
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            br.readLine(); // 跳过第一行标题
+            br.readLine(); // 跳过标题
 
             String line;
+            int taskCounter = 1;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",");
-                if (parts.length == 5) {
-                    data.add(new Record(parts[0], parts[1], parts[2], parts[3], parts[4]));
+                if (parts.length >= 4) {
+                    String taskName = "Ex-" + taskCounter++;
+                    String date = parts[0];
+                    String detail = parts[1];
+                    String amount = parts[2];
+                    String type = parts[3];
+                    data.add(new Record(taskName, detail, type, amount, date));
+
                 }
             }
         } catch (IOException e) {
@@ -235,21 +264,15 @@ public class HistoryPage {
         ObservableList<Record> filteredData = FXCollections.observableArrayList();
 
         if (category == null || category.equals("All information")) {
-            // 显示所有记录（不管类别是什么）
-            for (Record record : originalData) {  // 使用 originalData 进行过滤
+            for (Record record : originalData) {
                 if (record.toString().toLowerCase().contains(searchText)) {
                     filteredData.add(record);
                 }
             }
         } else {
-            // 根据指定列进行过滤
-            for (Record record : originalData) {  // 使用 originalData 进行过滤
+            for (Record record : originalData) {
                 boolean matches = false;
-
                 switch (category) {
-                    case "Task":
-                        matches = record.getTask().toLowerCase().contains(searchText);
-                        break;
                     case "Detail":
                         matches = record.getDetail().toLowerCase().contains(searchText);
                         break;
@@ -272,5 +295,4 @@ public class HistoryPage {
 
         return filteredData;
     }
-
 }
