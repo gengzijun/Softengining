@@ -83,13 +83,15 @@ Based on user spending habits, the AI offers personalized and actionable recomme
 
 ## 📌 User Story and AI Feature Mapping
 
-| Story ID | Story Name                  | User Story                                                  | AI Feature Implementation                                     |
-|----------|-----------------------------|-------------------------------------------------------------|---------------------------------------------------------------|
-| 2        | Categorize Correctly        | As a frugal person, I want the software to accurately categorize my expenses to clearly understand my spending flows. | Enhanced robustness of the AI classification module for precise automatic transaction categorization. |
-| 3        | Budget Recommendations      | As a wage earner, I want AI to provide monthly budget recommendations to improve my financial planning. | AI predictive analysis generates monthly budget recommendations and detailed financial advice. |
-| 6        | Viewing Transaction History | As a businessperson, I want to view spending histories from recent months to clearly understand profitability. | AI predictive analysis helps users clearly understand spending trends and supports historical analysis. |
-| 7        | Abnormal Spending Detection | As an elderly user, I want AI to detect abnormal spending behaviors to timely identify potential financial risks. | AI analysis based on historical data automatically identifies unusual spending behaviors. |
-| 10       | Annual Financial Summary    | As a single dweller, I want to receive an annual financial summary for a comprehensive overview of yearly incomes and expenses to better plan the next year's finances. | AI comprehensively analyzes yearly financial data and generates clear annual summary reports. |
+- **Story 1 - Data Import**: Supports importing CSV and JSON files from banking apps and parsing financial data automatically.
+- **Story 2 - Categorize Correctly**: Automatically categorizes transactions, allows manual adjustments, and exports categorized charts.
+- **Story 3 - Budget Recommendations**: AI generates personalized monthly budgets based on income and spending habits; manual adjustments supported.
+- **Story 4 - Localized Financial Scenarios**: Adapts to Chinese user spending patterns and holidays for more accurate categorization.
+- **Story 5 - Over-Budget Alert**: Alerts users when spending exceeds budget and provides category-specific overage details and suggestions.
+- **Story 6 - Viewing Transaction History**: Support filtering transaction records by month, category, and amount.
+- **Story 7 - Abnormal Spending Detection**: Establish a baseline based on user spending patterns to detect unusual transactions (e.g., large purchases or uncommon locations) and send alerts.
+- **Story 10 - Annual Financial Summary**: Generate an annual report covering income, expenses, savings, and investments. Support visualization with charts.
+- **Story 11 - Money-Saving Tips**：Provide personalized, clear, and user-friendly money-saving tips and strategies, with explanations and accessible design to help users optimize savings.
 
 
 
