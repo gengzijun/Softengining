@@ -57,8 +57,10 @@ Version 1 focuses on building the foundational structure and user interface flow
 - Static interaction only; no real-time updates
 - No transaction classification or smart analytics
 
-## ✅ Version 1 (Core Features)
+## ✅ Version 1 (User Story)
 
 - **Story 1 - Data Import**: Supports importing CSV and JSON files from banking apps and parsing financial data automatically.
 - **Story 2 - Categorize Correctly**: Automatically categorizes transactions, allows manual adjustments, and exports categorized charts.
 - **Story 3 - Budget Recommendations**: AI generates personalized monthly budgets based on income and spending habits; manual adjustments supported.
+- **Story 5 - Over-budget Alert**: Monitor expenditures, alert users when the budget is exceeded, and provide improvement suggestions based on the users' spending habits.
+- **Story 7 - Abnormal Spending Detection**: Establish a baseline based on user spending patterns to detect unusual transactions (e.g., large purchases or uncommon locations) and send alerts.
