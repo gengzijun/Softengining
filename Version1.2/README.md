@@ -90,12 +90,14 @@ Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 
 ### 👥 2.3 User Story and History Page Feature Mapping
 
-| Story ID | Story Name                  | User Story Requirement                                                                                       | HistoryPage Implementation                                 |
-|----------|-----------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| 1        | Data Import                 | As a salaried worker, I want automatic data import from files to save manual entry time and effort.         | Automatically loads and displays historical data monthly from CSV files. |
-| 2        | Categorize Correctly        | As a frugal person, I want accurate categorization of expenses to clearly track my spending.                 | Data includes clear categorization; provides category-based quick search functionality. |
-| 3        | Viewing Transaction History | As a businessman, I want to view spending history from past months to clearly understand profitability.     | Classifies uploaded data by month, enabling lookup of historical spending records. |
-| 4        | Localized Financial Scenarios | As a Chinese user, I want the software to recognize and adapt to localized financial scenarios.             | Uses RMB symbol (￥) consistently for amounts.             |
+- **Story 1 - Data Import**: Supports importing CSV and JSON files from banking apps and parsing financial data automatically.
+- **Story 2 - Categorize Correctly**: Automatically categorizes transactions, allows manual adjustments, and exports categorized charts.
+- **Story 3 - Budget Recommendations**: AI generates personalized monthly budgets based on income and spending habits; manual adjustments supported.
+- **Story 4 - Localized Financial Scenarios**: Adapts to Chinese user spending patterns and holidays for more accurate categorization.
+- **Story 5 - Over-Budget Alert**: Alerts users when spending exceeds budget and provides category-specific overage details and suggestions.
+- **Story 6 - Viewing Transaction History**: Support filtering transaction records by month, category, and amount.
+- **Story 7 - Abnormal Spending Detection**: Establish a baseline based on user spending patterns to detect unusual transactions (e.g., large purchases or uncommon locations) and send alerts.
+- **Story 11 - Money-Saving Tips**：Provide personalized, clear, and user-friendly money-saving tips and strategies, with explanations and accessible design to help users optimize savings.
 
 
 
