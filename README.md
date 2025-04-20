@@ -60,7 +60,7 @@ The following pie charts describes the number of consumption types in the first 
 
 | Name          | QMUL Student ID | BUPT Student ID | Work |
 |---------------|----------|---------|---------|
-| <p align="center"><a href="https://github.com/gengzijun"><strong>Zijun Geng</strong></a></p>| <p align="center"><strong>221170571</strong></p> | <p align="center"><strong>2022213671</strong></p> |---------|
+| <p align="center"><a href="https://github.com/gengzijun"><strong>Zijun Geng</strong></a></p>| <p align="center"><strong>221170571</strong></p> | <p align="center"><strong>2022213671</strong></p> | Work for building chart interface, connecting AI function with interface, designing UI|
 | <p align="center"><a href="https://github.com/monet-uta"><strong>Ye Wang</strong></a></p>| <p align="center"><strong>221170618</strong></p> | <p align="center"><strong>2022213666</strong></p> |---------|
 | <p align="center"><a href="https://github.com/Wenrui2"><strong>Wenrui Bai</strong></a></p>| <p align="center"><strong>221170504</strong></p> | <p align="center"><strong>2022213667</strong></p> |---------|
 | <p align="center"><a href="https://github.com/zhoujiayi2022213672"><strong>Jiayi Zhou</strong></a></p>| <p align="center"><strong>221170630</strong></p> | <p align="center"><strong>2022213672</strong></p> |---------|
