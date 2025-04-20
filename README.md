@@ -28,7 +28,7 @@
 <br>
 
 ## 📣 News
-- [04/11/2025] 🔥 We release our app version1!!!
+- [04/11/2025] 🔥 We release our app <a href="https://github.com/gengzijun"><strong>version1</strong></a>!!!
 - [03/21/2025] We finish our first check!!!
 - [03/15/2025] We release our datasets structure!
 - [03/15/2025] Our prototype is comming soon. Stay tuned! 
@@ -60,7 +60,7 @@ The following pie charts describes the number of consumption types in the first 
 
 | Name          | QMUL Student ID | BUPT Student ID | Work |
 |---------------|----------|---------|---------|
-| <p align="center"><a href="https://github.com/gengzijun"><strong>Zijun Geng</strong></a></p>| <p align="center"><strong>221170571</strong></p> | <p align="center"><strong>2022213671</strong></p> | Work for building chart interface, connecting AI function with interface, designing UI|
+| <p align="center"><a href="https://github.com/gengzijun"><strong>Zijun Geng</strong></a></p>| <p align="center"><strong>221170571</strong></p> | <p align="center"><strong>2022213671</strong></p> | Responsible for building chart interface, implementing functions of SavingGoal interface, connecting AI function with all interfaces, designing UI|
 | <p align="center"><a href="https://github.com/monet-uta"><strong>Ye Wang</strong></a></p>| <p align="center"><strong>221170618</strong></p> | <p align="center"><strong>2022213666</strong></p> |Responsible for the backend AI functions to realize the backend data generation for intelligent bill classification, prediction and suggestions. |
 | <p align="center"><a href="https://github.com/Wenrui2"><strong>Wenrui Bai</strong></a></p>| <p align="center"><strong>221170504</strong></p> | <p align="center"><strong>2022213667</strong></p> |Responsible for building SavingGoal interface, implementing functions of SavingGoal interface, as well as completing some parts of backlog.|
 | <p align="center"><a href="https://github.com/zhoujiayi2022213672"><strong>Jiayi Zhou</strong></a></p>| <p align="center"><strong>221170630</strong></p> | <p align="center"><strong>2022213672</strong></p> |Responsible for the design and functionality improvement of the history records page, as well as the connections between all pages and their detail modifications.|
