@@ -46,6 +46,8 @@ Version 1 focuses on building the foundational structure and user interface flow
 - Displays savings progress, goals, and financial tips
 - Includes modular components like tips, emergency savings, and progress bars
 
+
+
 <!--  -->
 
 ## 🗂️ Technical Highlights
@@ -64,3 +66,4 @@ Version 1 focuses on building the foundational structure and user interface flow
 - **Story 3 - Budget Recommendations**: AI generates personalized monthly budgets based on income and spending habits; manual adjustments supported.
 - **Story 5 - Over-budget Alert**: Monitor expenditures, alert users when the budget is exceeded, and provide improvement suggestions based on the users' spending habits.
 - **Story 7 - Abnormal Spending Detection**: Establish a baseline based on user spending patterns to detect unusual transactions (e.g., large purchases or uncommon locations) and send alerts.
+- **Story 11 - Money-Saving Tips**：Provide personalized, clear, and user-friendly money-saving tips and strategies, with explanations and accessible design to help users optimize savings.
