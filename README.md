@@ -28,7 +28,11 @@
 <br>
 
 ## 📣 News
-- [04/11/2025] 🔥 We release our app <a href="https://github.com/gengzijun"><strong>version1</strong></a>!!!
+- [04/20/2025] 🔥 We release our app <a href="[https://github.com/gengzijun](https://github.com/gengzijun/Software-Engining/tree/main/Version2)"><strong>version2</strong></a>!!!
+- [04/19/2025] 🔥 We release our app <a href="[https://github.com/gengzijun](https://github.com/gengzijun/Software-Engining/tree/main/Version1.3)"><strong>version1.3</strong></a>!!!
+- [04/17/2025] 🔥 We release our app <a href="[https://github.com/gengzijun](https://github.com/gengzijun/Software-Engining/tree/main/Version1.2)"><strong>version1.2</strong></a>!!!
+- [04/15/2025] 🔥 We release our app <a href="[https://github.com/gengzijun](https://github.com/gengzijun/Software-Engining/tree/main/Version1.1)"><strong>version1.1</strong></a>!!!
+- [04/11/2025] 🔥 We release our app <a href="[https://github.com/gengzijun](https://github.com/gengzijun/Software-Engining/tree/main/Version1)"><strong>version1</strong></a>!!!
 - [03/21/2025] We finish our first check!!!
 - [03/15/2025] We release our datasets structure!
 - [03/15/2025] Our prototype is comming soon. Stay tuned! 
