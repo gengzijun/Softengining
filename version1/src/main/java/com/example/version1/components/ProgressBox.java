@@ -19,8 +19,20 @@ public class ProgressBox extends VBox {
     private static final double DEFAULT_AMOUNT = 120_000;
     private static final String DEFAULT_FORMATTED = "120,000";
 
-    public ProgressBox() {
+    private DetailsBox detailsBox;
+
+    private Label savedAmountLabel;  // 用来显示 Have Saved
+    private Label remainingAmountLabel;  // 用来显示 Still need
+
+    private TextField amountInput;
+    private ComboBox<String> startDateComboBox;
+    private ComboBox<String> endDateComboBox;
+
+    public ProgressBox(DetailsBox detailsBox) {
+        this.detailsBox = detailsBox;
         initialize(); // 初始化 ProgressBox 布局
+        // 后配置监听器
+        bindListeners();
         // 配置全局格式化参数
         CURRENCY_FORMAT.setMaximumFractionDigits(2);
         CURRENCY_FORMAT.setMinimumFractionDigits(0);
@@ -42,11 +54,35 @@ public class ProgressBox extends VBox {
 
         // 创建并添加底部信息区域（已存金额，剩余金额）
         HBox bottomInfo = createBottomInfo();
+
         // 将所有区域添加到 ProgressBox
         getChildren().addAll(topInfo, progressArea, bottomInfo);
+
+        // 启动时先更新 Have Saved 和 Still need
+        updateProgress();
+    }
+
+    private void bindListeners() {
+        // 绑定日期选择监听
+        startDateComboBox.valueProperty().addListener((obs, old, newVal) -> {
+            detailsBox.updateData(Integer.parseInt(newVal), Integer.parseInt(endDateComboBox.getValue()));
+            updateProgress();
+        });
+
+        endDateComboBox.valueProperty().addListener((obs, old, newVal) -> {
+            detailsBox.updateData(Integer.parseInt(startDateComboBox.getValue()), Integer.parseInt(newVal));
+            updateProgress();
+        });
+
+        // 绑定金额输入监听
+        amountInput.textProperty().addListener((obs, old, newVal) -> {
+            updateProgress();
+        });
     }
 
     private HBox createTopInfo() {
+        this.startDateComboBox = createYearComboBox();
+        this.endDateComboBox = createYearComboBox();
         // 目标部分（修改后的可编辑金额）
         HBox targetBox = new HBox(5);
         Label targetTitle = new Label("Target: ");
@@ -56,8 +92,9 @@ public class ProgressBox extends VBox {
         Label currencySymbol = new Label("¥");
         currencySymbol.setFont(Font.font("Arial", FontWeight.BOLD, 22));
 
-        TextField amountInput = new TextField(DEFAULT_FORMATTED);
-        configureAmountInput(amountInput);
+        // 正确初始化成员变量（仅一次）
+        this.amountInput = new TextField(DEFAULT_FORMATTED);
+        configureAmountInput(this.amountInput); // 直接配置成员变量
 
         // 组合货币符号和输入框
         HBox amountContainer = new HBox(2);
@@ -81,6 +118,21 @@ public class ProgressBox extends VBox {
         endDateTitle.setFont(Font.font("Arial", FontWeight.BOLD, 16));
         ComboBox<String> endDateComboBox = createYearComboBox();
         endDateBox.getChildren().addAll(endDateTitle, endDateComboBox);
+
+
+        startDateComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
+            int startYear = Integer.parseInt(newValue);
+            int endYear = Integer.parseInt(endDateComboBox.getValue());
+            // 将年份范围传递给 DetailsBox
+            detailsBox.updateData(startYear, endYear);
+        });
+
+        endDateComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
+            int startYear = Integer.parseInt(startDateComboBox.getValue());
+            int endYear = Integer.parseInt(newValue);
+            // 将年份范围传递给 DetailsBox
+            detailsBox.updateData(startYear, endYear);
+        });
 
         // 布局容器（保持原有间距）
         HBox topInfo = new HBox(40);
@@ -171,27 +223,63 @@ public class ProgressBox extends VBox {
         return container;
     }
 
+    // 更新进度信息
+    public void updateProgress() {
+
+        // 动态解析目标金额
+        double target = parseTarget(amountInput.getText());
+        double haveSaved = detailsBox.getCumulativeSavings();
+        double stillNeed = target - haveSaved;
+        // 更新 Have Saved 和 Still need 标签
+        savedAmountLabel.setText("¥" + NumberFormat.getInstance().format(haveSaved));
+        remainingAmountLabel.setText("¥" + NumberFormat.getInstance().format(stillNeed));
+
+        // 更新进度条
+        double progress = haveSaved / target;
+        System.out.println(haveSaved);
+        System.out.println(target);
+
+        // 获取进度条和百分比标签
+        HBox progressBarContainer = (HBox) getChildren().get(1); // 假设进度条是第二个组件
+        StackPane progressStack = (StackPane) progressBarContainer.getChildren().get(0);  // 获取 StackPane
+        ProgressBar progressBar = (ProgressBar) progressStack.getChildren().get(0);  // 获取进度条
+        Label progressPercentage = (Label) progressStack.getChildren().get(1);  // 获取百分比标签
+
+        // 更新进度条的进度
+        progressBar.setProgress(progress);
+
+        // 更新百分比标签
+        progressPercentage.setText(String.format("%.2f%%", progress * 100));
+    }
+
+    private double parseTarget(String input) {
+        try {
+            return NumberFormat.getInstance().parse(input.replaceAll("[^\\d.]", "")).doubleValue();
+        } catch (Exception e) {
+            return DEFAULT_AMOUNT;
+        }
+    }
     private HBox createBottomInfo() {
         // 已存金额部分
-        HBox savedBox = new HBox(10);
+        HBox savedBox = new HBox(20);
         Label savedLabel = new Label("Have saved: ");
         savedLabel.setFont(Font.font("Arial", FontWeight.BOLD, 16));
-        Label savedAmount = new Label("¥49,200");
-        savedAmount.setFont(Font.font("Arial", FontWeight.BOLD, 20));
-        savedAmount.setTextFill(Color.web("#82DD6E"));
-        savedBox.getChildren().addAll(savedLabel, savedAmount);
+        savedAmountLabel = new Label("¥49,200");
+        savedAmountLabel.setFont(Font.font("Arial", FontWeight.BOLD, 20));
+        savedAmountLabel.setTextFill(Color.web("#82DD6E"));
+        savedBox.getChildren().addAll(savedLabel, savedAmountLabel);
 
         // 剩余金额部分
-        HBox remainingBox = new HBox(10);
+        HBox remainingBox = new HBox(20);
         Label remainingLabel = new Label("Still need: ");
         remainingLabel.setFont(Font.font("Arial", FontWeight.BOLD, 16));
-        Label remainingAmount = new Label("¥70,800");
-        remainingAmount.setFont(Font.font("Arial", FontWeight.BOLD, 20));
-        remainingAmount.setTextFill(Color.web("#C24943"));
-        remainingBox.getChildren().addAll(remainingLabel, remainingAmount);
+        remainingAmountLabel = new Label("¥70,800");
+        remainingAmountLabel.setFont(Font.font("Arial", FontWeight.BOLD, 20));
+        remainingAmountLabel.setTextFill(Color.web("#C24943"));
+        remainingBox.getChildren().addAll(remainingLabel, remainingAmountLabel);
 
         // 底部信息的布局容器
-        HBox bottomInfo = new HBox(1000);
+        HBox bottomInfo = new HBox(800);
         bottomInfo.setAlignment(Pos.CENTER);
         bottomInfo.getChildren().addAll(savedBox, remainingBox);
         return bottomInfo;

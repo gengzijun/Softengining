@@ -1,5 +1,6 @@
 package com.example.version1;
 
+import com.opencsv.exceptions.CsvValidationException;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -10,10 +11,35 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import com.example.version1.components.*;
 
+import java.io.IOException;
+import java.util.*;
+import java.util.List;
+
+
 public class SavingGoalPage extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException, CsvValidationException {
+
+        List<String> files = Arrays.asList(
+                "src/main/resources/data/(20240101-20240229).csv",
+                "src/main/resources/data/(20240601-20240901).csv",
+                "src/main/resources/data/(20240301-20240601).csv",
+                "src/main/resources/data/(20240901-20241130).csv",
+                "src/main/resources/data/(20241201-20250228).csv"
+        );
+
+        // 调用 CSVReaderUtility 类的读取和合并文件方法
+        List<String[]> mergedData = CSVReaderUtility.readAndMergeCSVFiles(files);
+
+        // 打印合并后的内容
+        for (String[] line : mergedData) {
+            System.out.println(String.join(",", line));
+        }
+
+
+
+
         // Create root layout
         BorderPane root = new BorderPane();
 
@@ -29,10 +55,15 @@ public class SavingGoalPage extends Application {
         root.setTop(topBox);
 
         // Create main content sections
-        ProgressBox progressBox = new ProgressBox();
-        DetailsBox detailsBox = new DetailsBox();
+        DetailsBox detailsBox = new DetailsBox(mergedData);
+        ProgressBox progressBox = new ProgressBox(detailsBox);
         EmergencyBox emergencyBox = new EmergencyBox();
         SavingTipsBox savingTipsBox = new SavingTipsBox(getHostServices());
+
+        // 添加双向绑定
+        detailsBox.addUpdateListener(() -> {
+            progressBox.updateProgress();
+        });
 
         // Combine all sections into the main content area
         VBox mainContent = new VBox(30);
