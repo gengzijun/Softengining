@@ -1,0 +1,47 @@
+Task,Date,Detail,Amount,Type
+Ex-1,2024-02-28 22:47,DMALL,17.90,null
+Ex-2,2024-02-27 22:41,DMALL,3.80,null
+Ex-3,2024-02-27 22:36,Yiran,126.00,null
+Ex-4,2024-02-27 19:58,Yiran,50.00,null
+Ex-5,2024-02-27 16:48,Tencent,15.00,null
+Ex-6,2024-02-26 18:50,DMALL,7.99,null
+Ex-7,2024-02-26 18:23,BUPT,200.00,income
+Ex-8,2024-02-25 19:54,Meituan,25.88,null
+Ex-9,2024-02-23 19:20,Yiran,25.00,null
+Ex-10,2024-02-20 21:02,Yitian,55.00,null
+Ex-11,2024-02-20 14:03,Zhonghuang,2.00,null
+Ex-12,2024-02-19 11:59,Yitian,18.00,null
+Ex-13,2024-02-17 17:26,Rice Peel,8.00,null
+Ex-14,2024-02-15 21:44,PDD,5.30,null
+Ex-15,2024-02-15 20:02,Mingxin,37.75,income
+Ex-16,2024-02-15 19:13,Meituan,21.56,null
+Ex-17,2024-02-14 22:27,Haina Zhixing,29.99,null
+Ex-18,2024-02-13 19:03,Meituan,20.00,null
+Ex-19,2024-02-12 11:56,Meituan,38.00,null
+Ex-20,2024-02-09 20:10,Mingxin,9.99,income
+Ex-21,2024-02-09 18:47,Mingxin,0.01,income
+Ex-22,2024-02-07 16:01,Meituan,39.76,null
+Ex-23,2024-02-06 11:50,Noodles,3.00,null
+Ex-1,2024-02-28 22:47,DMALL,17.90,shopping
+Ex-2,2024-02-27 22:41,DMALL,3.80,shopping
+Ex-3,2024-02-27 22:36,Yiran,126.00,living
+Ex-4,2024-02-27 19:58,Yiran,50.00,living
+Ex-5,2024-02-27 16:48,Tencent,15.00,entertainment
+Ex-6,2024-02-26 18:50,DMALL,7.99,shopping
+Ex-7,2024-02-26 18:23,BUPT,200.00,income
+Ex-8,2024-02-25 19:54,Meituan,25.88,catering
+Ex-9,2024-02-23 19:20,Yiran,25.00,living
+Ex-10,2024-02-20 21:02,Yitian,55.00,living
+Ex-11,2024-02-20 14:03,Zhonghuang,2.00,living
+Ex-12,2024-02-19 11:59,Yitian,18.00,living
+Ex-13,2024-02-17 17:26,Rice Peel,8.00,catering
+Ex-14,2024-02-15 21:44,PDD,5.30,shopping
+Ex-15,2024-02-15 20:02,Mingxin,37.75,living
+Ex-16,2024-02-15 19:13,Meituan,21.56,catering
+Ex-17,2024-02-14 22:27,Haina Zhixing,29.99,entertainment
+Ex-18,2024-02-13 19:03,Meituan,20.00,catering
+Ex-19,2024-02-12 11:56,Meituan,38.00,catering
+Ex-20,2024-02-09 20:10,Mingxin,9.99,living
+Ex-21,2024-02-09 18:47,Mingxin,0.01,income
+Ex-22,2024-02-07 16:01,Meituan,39.76,catering
+Ex-23,2024-02-06 11:50,Noodles,3.00,catering
