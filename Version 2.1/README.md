@@ -51,3 +51,18 @@ Click the **Export Data** button to download a `Saving_data.csv` file containing
 ![4b073cb1134abd9aa0cc23e1e587c3e](https://github.com/user-attachments/assets/957a68b1-efac-4bbc-a0c2-9590639ea0f6)
 
 
+---
+
+### 📌 User Story and AI Feature Mapping
+
+- **Story 1 - Data Import**: Supports importing CSV and JSON files from banking apps and parsing financial data automatically.
+- **Story 2 - Categorize Correctly**: Automatically categorizes transactions, allows manual adjustments, and exports categorized charts.
+- **Story 3 - Budget Recommendations**: AI generates personalized monthly budgets based on income and spending habits; manual adjustments supported.
+- **Story 4 - Localized Financial Scenarios**: Adapts to Chinese user spending patterns and holidays for more accurate categorization.
+- **Story 5 - Over-Budget Alert**: Alerts users when spending exceeds budget and provides category-specific overage details and suggestions.
+- **Story 6 - Viewing Transaction History**: Support filtering transaction records by month, category, and amount.
+- **Story 7 - Abnormal Spending Detection**: Establish a baseline based on user spending patterns to detect unusual transactions (e.g., large purchases or uncommon locations) and send alerts.
+- **Story 8 - Savings Goal Setting and Tracking**: Enables users to set savings goals (amount, term), dynamically update progress, adjust goals, and provide detailed reports including amount, remaining goals, and probability analysis.
+- **Story 9 - Reserve Fund**: Offers a "reserve fund" function, allowing users to deposit a portion of funds on a monthly basis. Users can view detailed information such as the total amount and the time and amount of each deposit.
+- **Story 10 - Annual Financial Summary**: Generate an annual report covering income, expenses, savings, and investments. Support visualization with charts.
+- **Story 11 - Money-Saving Tips**：Provide personalized, clear, and user-friendly money-saving tips and strategies, with explanations and accessible design to help users optimize savings.
