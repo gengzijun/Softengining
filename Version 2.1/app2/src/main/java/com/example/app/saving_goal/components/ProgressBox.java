@@ -28,7 +28,7 @@ public class ProgressBox extends VBox {
     public static final double DEFAULT_AMOUNT = 120_000;
     private static final String DEFAULT_FORMATTED = "120,000";
     // 新增成员变量保存路径（可自定义）
-    private static final String CSV_DIR = "target/classes/Savinggoal/";
+    private static final String CSV_DIR = "src/main/resources/savinggoal/";
     private static final String CSV_PATH = CSV_DIR + "saving_data.csv";
 
 
