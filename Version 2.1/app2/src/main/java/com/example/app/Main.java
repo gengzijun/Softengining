@@ -20,7 +20,7 @@ public class Main {
     public static List<TransactionRecord> processFile(String filepath) {
         //TIP 当文本光标位于高亮显示的文本处时按 <shortcut actionId="ShowIntentionActions"/>
         // 查看 IntelliJ IDEA 建议如何修正。
-        System.out.printf("Main start!\n");
+        System.out.printf("AI classify start!\n");
         Dotenv dotenv = Dotenv.load();
         String deepseek_api_key = dotenv.get("DEEPSEEK_API_KEY");
 
@@ -56,20 +56,20 @@ public class Main {
             String response = model_h.chat(prompt);
             fillCategories(batch, response);
         }
-
+//
 
         // 输出最终结果
         System.out.println("\n result");
         records.forEach(System.out::println);
 
-
-        BudgetAdvisor advisor = new BudgetAdvisor(model_h);
-
-        File dataFolder = new File("src/main/resources/data");
-        BigDecimal targetSavings = new BigDecimal("1000");
-        String outputCsvPath = "src/main/resources/prediction/budget_recommendation.csv";
-//月就是1，季度3，年12
-        advisor.runPredictionAndAdvice(dataFolder, 1, targetSavings, outputCsvPath);
+////
+//        BudgetAdvisor advisor = new BudgetAdvisor(model_h);
+//
+//        File dataFolder = new File("src/main/resources/data");
+//        BigDecimal targetSavings = new BigDecimal("1000");
+//        String outputCsvPath = "src/main/resources/prediction/budget_recommendation.csv";
+////月就是1，季度3，年12
+//        advisor.runPredictionAndAdvice(dataFolder, 1, targetSavings, outputCsvPath);
         return records;
 
     }
@@ -130,6 +130,21 @@ public class Main {
             System.err.println(response);
             e.printStackTrace();
         }
+    }
+
+    public static void aiPredict (String filepath){
+//传入savinggoal 信息，获取时间和存储目标，已存，获取这个月，季度，年的消费类别信息，给出下一月度，季度，年的预算，以及建议
+        OpenAiChatModel model_p = OpenAiChatModel
+                .builder()
+                .baseUrl("https://ark.cn-beijing.volces.com/api/v3/")
+                .apiKey("7c33c13c-2d6f-4fdd-be8b-d7c8b3df92d9")
+                .modelName("deepseek-v3-250324")
+                .temperature(0.01)
+                .timeout(Duration.ofSeconds(60))
+                .build();
+
+
+
     }
 
 }

@@ -1,0 +1,188 @@
+Transaction time,Type,Transaction object,Amount (RMB)
+2024/6/1 23:45,Catering,Meituan,гд17.60
+2024/6/1 17:11,Shopping,DMALL,гд1.50
+2024/6/1 15:50,Living,Jiachen,гд83.00
+2024/6/1 8:40,Income,ICBC,"гд8,000"
+2024/5/31 18:32,Catering,BUPT,гд16.00
+2024/5/30 17:11,Entertainment,Tencent,гд15.00
+2024/5/30 11:56,Catering,BUPT,гд3.00
+2024/5/30 11:53,Catering,BUPT,гд17.00
+2024/5/29 22:23,Catering,Meituan,гд26.50
+2024/5/29 17:33,Shopping,DMALL,гд4.90
+2024/5/29 10:42,Catering,Meituan,гд142.50
+2024/5/28 23:16,Shopping,Fruit shop,гд12.00
+2024/5/28 19:49,Shopping,Wumart,гд6.40
+2024/5/28 19:00,Living,SF Express,гд19.80
+2024/5/27 21:00,Living,Beijing All-in-One Card,гд20.00
+2024/5/27 11:46,Shopping,DMALL,гд3.80
+2024/5/27 11:20,Catering,BUPT,гд13.60
+2024/5/26 22:09,Living,Beijing All-in-One Card,гд20.00
+2024/5/26 21:42,Catering,Chalet barbecue,гд344.80
+2024/5/24 22:03,Shopping,DMALL,гд10.90
+2024/5/24 16:01,Shopping,DMALL,гд8.50
+2024/5/24 12:13,Shopping,DMALL,гд4.90
+2024/5/23 18:39,Shopping,Fruit shop,гд9.40
+2024/5/23 12:14,Living,BUPT,гд200.00
+2024/5/23 12:09,Catering,BUPT,гд12.60
+2024/5/22 23:23,Shopping,Fruit shop,гд12.00
+2024/5/22 18:00,Shopping,DMALL,гд3.00
+2024/5/22 13:42,Catering,BUPT,гд3.00
+2024/5/22 13:42,Catering,BUPT,гд15.00
+2024/5/21 13:05,Entertainment,Fahai Temple,гд320.00
+2024/5/21 11:44,Shopping,DMALL,гд14.90
+2024/5/19 16:10,Living,Gzz,гд40.00
+2024/5/18 19:08,Shopping,Fruit shop,гд11.00
+2024/5/17 18:37,Shopping,Fruit shop,гд7.00
+2024/5/15 18:25,Living,BUPT,гд200.00
+2024/5/14 21:18,Living,Weizhen,гд2.70
+2024/5/11 23:00,Shopping,DMALL,гд8.50
+2024/5/11 16:46,Shopping,DMALL,гд1.99
+2024/5/9 15:58,Catering,Yueshijia,гд503.00
+2024/5/8 16:29,Shopping,DMALL,гд17.90
+2024/5/8 12:26,Shopping,DMALL,гд4.90
+2024/5/7 23:17,Shopping,DMALL,гд23.70
+2024/5/7 14:10,Living,BUPT,гд200.00
+2024/5/7 14:10,Living,Yihui,гд9.00
+2024/5/6 23:16,Catering,Hutiujun pancakes,гд9.00
+2024/5/5 21:40,Living,Jiachen,гд176.00
+2024/5/5 12:03,Catering,BUPT,гд18.00
+2024/5/5 11:58,Catering,BUPT,гд2.00
+2024/5/4 21:57,Living,Yihui,гд127.00
+2024/5/3 21:28,Living,Jiachen,гд202.00
+2024/5/3 17:47,Shopping,Shiao,гд6.00
+2024/5/3 16:16,Living,Beijing All-in-One Card,гд20.00
+2024/5/3 9:48,Catering,BUPT,гд4.50
+2024/5/2 19:28,Catering,BUPT,гд2.00
+2024/5/2 19:22,Catering,BUPT,гд14.00
+2024/5/2 15:49,Shopping,JD,гд35.50
+2024/5/1 8:40,Income,ICBC,"гд8,000"
+2024/4/30 23:29,Shopping,Fruit shop,гд3.90
+2024/4/30 23:27,Shopping,DMALL,гд6.50
+2024/4/29 17:29,Entertainment,Tencent,гд15.00
+2024/4/28 17:47,Shopping,DMALL,гд1.00
+2024/4/25 12:43,Living,BUPT,гд200.00
+2024/4/25 12:42,Catering,BUPT,гд11.00
+2024/4/24 22:35,Entertainment,Xiaohongshu,гд0.10
+2024/4/24 22:31,Entertainment,Xiaohongshu,гд1.00
+2024/4/24 19:15,Catering,Jiangutou,гд26.00
+2024/4/24 13:01,Shopping,DMALL,гд7.50
+2024/4/24 12:38,Catering,BUPT,гд12.00
+2024/4/23 11:53,Catering,McDonald's,гд13.90
+2024/4/22 13:56,Shopping,DMALL,гд3.00
+2024/4/21 17:03,Entertainment,YC,гд135.00
+2024/4/21 15:38,Living,Mingxin,гд6.66
+2024/4/21 12:10,Catering,Meituan,гд28.98
+2024/4/20 23:05,Living,Jiachen,гд68.00
+2024/4/20 14:57,Living,CNKI,гд4.50
+2024/4/20 12:23,Catering,Missa Ice City,гд5.00
+2024/4/20 11:53,Catering,Beef noodles,гд22.00
+2024/4/19 23:17,Shopping,Fruit shop,гд4.90
+2024/4/19 20:04,Catering,Meituan,гд32.40
+2024/4/18 12:20,Catering,BUPT,гд34.00
+2024/4/17 23:04,Catering,Meituan,гд24.98
+2024/4/15 18:40,Shopping,Fruit shop,гд13.00
+2024/4/14 23:14,Shopping,DMALL,гд13.90
+2024/4/14 20:32,Living,Gzz,гд40.00
+2024/4/14 19:50,Shopping,DMALL,гд8.90
+2024/4/14 13:03,Shopping,DMALL,гд9.90
+2024/4/14 12:58,Living,Weizhen,гд1.20
+2024/4/13 19:17,Shopping,Fruit shop,гд2.70
+2024/4/13 18:47,Catering,Sheep Soup House,гд20.00
+2024/4/13 16:45,Living,Zheyun,гд8.00
+2024/4/13 13:29,Catering,Missa Ice City,гд10.00
+2024/4/13 13:10,Catering,Jiangutou,гд26.00
+2024/4/12 15:34,Contingency,Hospital,гд1.00
+2024/4/11 23:15,Shopping,DMALL,гд65.00
+2024/4/11 12:20,Shopping,Fruit shop,гд10.00
+2024/4/11 11:54,Living,BUPT,гд200.00
+2024/4/11 11:52,Catering,BUPT,гд13.00
+2024/4/11 11:08,Entertainment,Xiaohongshu,гд6.60
+2024/4/10 23:04,Shopping,DMALL,гд17.90
+2024/4/10 21:52,Catering,KFC,гд43.60
+2024/4/10 19:09,Catering,Meituan,гд75.80
+2024/4/10 14:29,Entertainment,Lama temple,гд12.00
+2024/4/10 13:52,Catering,Fried noodles,гд25.00
+2024/4/10 13:17,Entertainment,Dahuange,гд11.00
+2024/4/10 9:47,Catering,BUPT,гд6.00
+2024/4/9 9:46,Catering,BUPT,гд2.00
+2024/4/9 9:45,Catering,BUPT,гд3.50
+2024/4/8 9:34,Living,Weizhen,гд1.80
+2024/4/7 16:49,Catering,Meituan,гд28.20
+2024/4/7 10:37,Catering,Beef noodles,гд15.00
+2024/4/6 13:10,Shopping,Aviation restaurant supermarket,гд5.00
+2024/4/6 12:43,Catering,Wonton House,гд18.00
+2024/4/4 11:38,Entertainment,Capcut,гд30.00
+2024/4/3 21:51,Shopping,Aviation restaurant supermarket,гд8.00
+2024/4/2 18:51,Shopping,DMALL,гд14.80
+2024/4/2 18:49,Shopping,Luxihe,гд44.64
+2024/4/2 14:27,Living,BUPT,гд100.00
+2024/4/2 11:26,Catering,Ele,гд13.80
+2024/4/1 22:02,Living,Weizhen,гд0.25
+2024/4/1 18:11,Shopping,DMALL,гд13.80
+2024/4/1 17:50,Catering,BUPT,гд18.00
+2024/4/1 11:18,Catering,Mouthful pancakes,гд12.00
+2024/4/1 8:40,Income,ICBC,"гд8,000"
+2024/3/31 18:26,Catering,Beef noodles,гд16.00
+2024/3/31 13:11,Shopping,DMALL,гд5.00
+2024/3/31 13:08,Catering,BUPT,гд12.00
+2024/3/30 21:33,Living,Yihui,гд33.00
+2024/3/30 12:27,Catering,BUPT,гд16.00
+2024/3/29 21:25,Living,Yihui,гд12.90
+2024/3/29 21:18,Shopping,Fruit shop,гд11.40
+2024/3/29 19:37,Catering,Meituan,гд26.98
+2024/3/29 17:42,Entertainment,Tencent,гд15.00
+2024/3/28 17:30,Shopping,Fruit shop,гд10.00
+2024/3/27 23:04,Catering,Meituan,гд26.79
+2024/3/27 17:56,Catering,McDonald's,гд13.90
+2024/3/27 12:42,Shopping,Fruit shop,гд10.00
+2024/3/27 12:19,Catering,BUPT,гд12.00
+2024/3/26 18:50,Shopping,DMALL,гд6.50
+2024/3/24 23:29,Shopping,Fruit shop,гд4.00
+2024/3/24 12:37,Catering,Jiangutou,гд26.00
+2024/3/23 18:07,Shopping,Fenglan,гд3.50
+2024/3/23 17:47,Catering,Sliced noodles,гд18.00
+2024/3/23 17:32,Catering,Missa Ice City,гд5.00
+2024/3/23 11:37,Catering,Meituan,гд27.99
+2024/3/23 1:18,Shopping,JD,гд89.00
+2024/3/22 18:19,Shopping,DMALL,гд1.30
+2024/3/22 17:55,Catering,BUPT,гд3.00
+2024/3/22 17:43,Catering,BUPT,гд17.00
+2024/3/22 12:47,Shopping,DMALL,гд5.00
+2024/3/22 10:47,Entertainment,YC,гд45.00
+2024/3/21 18:25,Living,BUPT,гд200.00
+2024/3/20 22:47,Shopping,Fruit shop,гд10.00
+2024/3/19 21:16,Contingency,Hospital,гд4.17
+2024/3/19 21:10,Contingency,Hospital,гд1.00
+2024/3/19 20:14,Living,Gzz,гд45.00
+2024/3/19 18:59,Catering,Missa Ice City,гд16.00
+2024/3/18 18:33,Shopping,Fruit shop,гд10.00
+2024/3/16 12:54,Shopping,Fruit shop,гд13.80
+2024/3/15 23:53,Living,Gzz,гд78.00
+2024/3/15 15:53,Catering,McDonald's,гд13.90
+2024/3/15 11:57,Shopping,DMALL,гд5.00
+2024/3/14 17:43,Living,BUPT,гд200.00
+2024/3/14 17:42,Catering,BUPT,гд11.00
+2024/3/13 9:54,Catering,Meituan,гд30.60
+2024/3/12 18:28,Living,Yihui,гд14.50
+2024/3/12 17:54,Catering,Jinguyuan Dumpling,гд77.00
+2024/3/12 12:23,Living,Weizhen,гд0.30
+2024/3/12 11:06,Catering,Meituan,гд40.36
+2024/3/11 23:11,Shopping,DMALL,гд3.80
+2024/3/11 10:55,Contingency,Hospital,гд1.00
+2024/3/10 23:19,Shopping,DMALL,гд9.90
+2024/3/10 12:23,Shopping,Fruit shop,гд10.00
+2024/3/9 16:58,Shopping,PDD,гд1.68
+2024/3/8 16:46,Entertainment,Red packets,гд41.00
+2024/3/8 15:36,Shopping,Fruit shop,гд10.00
+2024/3/8 15:34,Living,Huiguan,гд10.00
+2024/3/7 17:59,Shopping,JD,гд119.00
+2024/3/7 16:53,Catering,McDonald's,гд13.90
+2024/3/7 13:03,Contingency,Hospital,гд50.00
+2024/3/6 18:17,Shopping,Fruit shop,гд14.70
+2024/3/5 18:56,Shopping,Fruit shop,гд11.50
+2024/3/4 18:25,Living,BUPT,гд200.00
+2024/3/4 12:49,Shopping,DMALL,гд5.00
+2024/3/2 19:39,Shopping,Luxihe,гд21.90
+2024/3/1 19:47,Catering,Meituan,гд26.78
+2024/3/1 19:40,Catering,Meituan,гд24.28
+2024/3/1 8:40,Income,ICBC,"гд8,000"

@@ -1,11 +1,11 @@
 Date,Detail,Amount,Type
 2024-02-28 22:47,DMALL,17.90,shopping
 2024-02-27 22:41,DMALL,3.80,shopping
-2024-02-27 22:36,Yiran,126.00,shopping
-2024-02-27 19:58,Yiran,50.00,Shopping
+2024-02-27 22:36,Yiran,126.00,living
+2024-02-27 19:58,Yiran,50.00,living
 2024-02-27 16:48,Tencent,15.00,entertainment
 2024-02-27 07:53,DMALL,13.80,shopping
-2024-02-26 18:50,DMALL,7.99,Shopping
+2024-02-26 18:50,DMALL,7.99,shopping
 2024-02-26 18:23,BUPT,200.00,living
 2024-02-25 19:54,Meituan,25.88,catering
 2024-02-25 09:31,Luodazhong,10.00,catering
@@ -19,16 +19,17 @@ Date,Detail,Amount,Type
 2024-02-15 19:13,Meituan,21.56,catering
 2024-02-14 22:27,Haina Zhixing,29.99,entertainment
 2024-02-13 19:03,Meituan,20.00,catering
-2024-02-12 11:56,Meituan,38.00,shopping
+2024-02-12 11:56,Meituan,38.00,catering
 2024-02-10 00:08,Red packets,12.00,living
-2024-02-09 20:10,Mingxin,9.99,living
-2024-02-09 18:47,Mingxin,0.01,living
-2024-02-07 16:01,Meituan,39.76,shopping
+2024-02-09 20:10,Mingxin,9.99,shopping
+2024-02-09 18:47,Mingxin,0.01,shopping
+2024-02-07 16:01,Meituan,39.76,catering
 2024-02-06 11:50,Noodles,3.00,catering
 2024-02-01 00:01,Transaction,50000,income
+2024-01-31 22:47,Transaction,40000,income
 2024-01-30 14:56,Yigancheng,19.80,entertainment
-2024-01-30 14:34,Meituan,17.40,shopping
-2024-01-29 21:45,Yitian,43.00,entertainment
+2024-01-30 14:34,Meituan,17.40,catering
+2024-01-29 21:45,Yitian,43.00,shopping
 2024-01-29 20:09,Shizijie,10.00,entertainment
 2024-01-29 19:47,Shizijie,30.00,shopping
 2024-01-29 13:52,Beijing AllinOne Card,30.00,living
@@ -44,7 +45,7 @@ Date,Detail,Amount,Type
 2024-01-23 18:26,Yitian,15.00,shopping
 2024-01-22 22:30,Jiayin,65.00,living
 2024-01-22 22:30,Yihao,6.00,shopping
-2024-01-22 16:42,Pang Donglai,50.60,catering
+2024-01-22 16:42,Pang Donglai,50.60,shopping
 2024-01-22 11:22,Red date,30.00,shopping
 2024-01-22 09:23,Beijing AllinOne Card,10.00,living
 2024-01-20 21:55,Yitian,208.00,shopping

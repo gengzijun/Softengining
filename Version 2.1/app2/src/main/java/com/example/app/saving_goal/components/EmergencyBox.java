@@ -30,7 +30,7 @@ public class EmergencyBox extends VBox {
 
     private TextField inputField; // TextField for user input
     private double reservedAmount;
-    private static final String CSV_DIR = "target/classes/Savinggoal/";
+    private static final String CSV_DIR = "src/main/resources/savinggoal/";
     private static final String CSV_PATH = CSV_DIR + "saving_data.csv";
 
     public EmergencyBox() {
