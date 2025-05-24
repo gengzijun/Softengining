@@ -28,11 +28,11 @@
 <br>
 
 ## 📣 News
-- [04/20/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version4"><strong>version4</strong></a>!
-- [04/19/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version3.1"><strong>version3.1</strong></a>!
-- [04/17/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version3"><strong>version3</strong></a>!
-- [04/15/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version2.2"><strong>version2.2</strong></a>!
-- [04/11/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version2.1"><strong>version2.1</strong></a>!
+- [05/23/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version4"><strong>version4</strong></a>!
+- [05/18/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version3.1"><strong>version3.1</strong></a>!
+- [05/9/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version3"><strong>version3</strong></a>!
+- [05/5/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version2.2"><strong>version2.2</strong></a>!
+- [05/1/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version2.1"><strong>version2.1</strong></a>!
 - [04/20/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version2"><strong>version2</strong></a>!
 - [04/19/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version1.3"><strong>version1.3</strong></a>!
 - [04/17/2025] 🔥 We release our app <a href="https://github.com/gengzijun/Software-Engining/tree/main/Version1.2"><strong>version1.2</strong></a>!
