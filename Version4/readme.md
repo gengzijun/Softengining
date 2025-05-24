@@ -4,13 +4,21 @@ AI intelligent accounting assistant, allowing you to record transactions with ju
 ## 0. Login Page (`LoginPage.java`)
 - Basic user login interaction
 - Navigates to main dashboard upon entering a username
-登录界面图片
 
+<img width="397" alt="735bd5d1be03d47352528b89c5894e1" src="https://github.com/user-attachments/assets/f299850d-48b8-4257-8e29-85321f61b96b" />
+
+---
 
 
 ## 🏠 1. Main Page (`MainPage.java`)
 We generate the main page by importing data and conducting analysis with AI.
-主页面照片
+
+<img width="899" alt="dfef651c305bd508e764ac7c604454d" src="https://github.com/user-attachments/assets/6b18b9f7-0f04-4c90-aa44-1c6f32a5bb3f" />
+
+<img width="901" alt="52e8f07a03053796cdf76dbfbfc16bc" src="https://github.com/user-attachments/assets/97950432-3dae-4b26-8683-c2784b2acdd0" />
+
+<img width="899" alt="ab2ab1a04df8be2c478e575528964de" src="https://github.com/user-attachments/assets/4be8b1c7-0a5c-441d-8dfa-f7abacac88eb" />
+
 
 ### 📋 1.1 Data Type
 
@@ -21,15 +29,19 @@ Uses the `Expense` class as the underlying data model, including:
 - `type` (transaction type)
 
 Users can rearrange data by selecting different data criteria such as date：
-data图片
+
+<img width="355" alt="ffd984d508567814a55223db2ba43b5" src="https://github.com/user-attachments/assets/0e3eaab4-8c8b-4eaf-829c-23d5e2b8814f" />
+
 
 detail：
 
-detail图片
+<img width="359" alt="8bc3ff7ac9e707ebbaba6a3c8962262" src="https://github.com/user-attachments/assets/4b991e27-14ea-4e59-b2e7-c75add3c09af" />
+
 
 or type：
 
-type图片
+<img width="911" alt="c22dbca662f4f3433326010bd30e632" src="https://github.com/user-attachments/assets/6d881b43-289b-41aa-ba95-b86794f5fa3e" />
+
 
 
 Implements JavaFX's `StringProperty` for real-time binding between data and UI components.
@@ -44,16 +56,26 @@ Implements JavaFX's `StringProperty` for real-time binding between data and UI c
   - Includes buttons for importing and exporting CSV data, facilitating data backup and bulk import.
   - Provides quick switching to the history page.
 
+<img width="911" alt="5b62110533cbd8d4220a5766cd077d2" src="https://github.com/user-attachments/assets/dc7ca266-0071-4722-95dc-e5a9d3347b1a" />
+
 - **Center Area**
   - Displays recent financial records using a `TableView`.
   - Supports direct editing (e.g., changing transaction type), with automatic saving upon modification.
 
-更改类型图片
+<img width="900" alt="4901d43cade2cdfcebbe535f38a9edf" src="https://github.com/user-attachments/assets/1585ba07-c9cc-4cb5-8d7f-a75213b3ebbd" />
+
+### 🧩 1.3 File export
+The generated file can be exported in the form of a CSV file, which is convenient for sharing and storage.
+
+<img width="911" alt="60c20fb82a9d6a3f42789e048946146" src="https://github.com/user-attachments/assets/40c114a2-7c5d-4f7a-968d-3eb41a42b2ee" />
+
 
 ## 🕰️ 2.History Page (`HistoryPage.java`)
 
 The history page is structurally similar to the main page.
-主界面照片
+
+<img width="899" alt="ab2ab1a04df8be2c478e575528964de" src="https://github.com/user-attachments/assets/8878ef58-8bb0-4867-ad5f-222fca6aee7b" />
+
 
 ### 📋 2.1 Data Type
 
@@ -75,7 +97,7 @@ Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 
   - Shows a popup prompt if data for the selected month is not available, instructing users to upload the file.
 
-切屏错误图片
+<img width="448" alt="edf99df5e68ca733a52b72b42239f51" src="https://github.com/user-attachments/assets/ba97e317-8362-4f68-b0bd-1885f9ee15b9" />
 
 
 - **Top Main View**
@@ -85,7 +107,7 @@ Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 
 ## 🕰️ 3. Detail Page 
 
-细节界面照片
+<img width="1091" alt="6c653840948e7ec4eeae7cea39909d3" src="https://github.com/user-attachments/assets/65b7115c-8784-4ac2-834c-3f94bffc38b4" />
 
 
 ### 🆘 3.1 Emergency-Expense Reservation
