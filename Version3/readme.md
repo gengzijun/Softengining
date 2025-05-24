@@ -1,4 +1,4 @@
-# 📘 Version 3.1 
+# 📘 Version 3
 
 ## ✨ Overview
 In version 3.1, we mainly optimized the functions related to saving goals.
