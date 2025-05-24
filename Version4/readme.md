@@ -234,11 +234,13 @@ After analysis, the AI generates corresponding line charts and pie charts:
 
 - **Line Chart:** Displays daily changes in spending amounts over time.
 
-线型图
+<img width="590" alt="c645c349d58a469bdaae83e2e859507" src="https://github.com/user-attachments/assets/09784fff-fb5f-4888-90f2-63d56aa15443" />
+
 
 - **Pie Chart:** Illustrates the proportion of different expense categories within total spending.
 
-饼图
+<img width="587" alt="0e40689f4a1d0e887eb4e8b5ae11afb" src="https://github.com/user-attachments/assets/80f843ed-553f-435b-b16c-251a56e15c2e" />
+
 
 ---
 
@@ -246,7 +248,7 @@ After analysis, the AI generates corresponding line charts and pie charts:
 
 This component forecasts future financial conditions and provides personalized advice.
 
-### Workflow:
+#### Workflow:
 
 1. Aggregates historical spending data using `StatsAggregator`.
 2. Constructs AI prompts via `BudgetPromptBuilder` based on historical data and target savings.
@@ -254,28 +256,31 @@ This component forecasts future financial conditions and provides personalized a
 4. Parses AI responses into structured predictive data (`PredictionResult`) and actionable advice.
 5. Saves results into CSV files using `ResultSaver`.
 
-### Budget Prediction:
+#### Budget Prediction:
 
 The AI analyzes current expenses and forecasts future spending according to different categories, providing detailed recommendations.
 
-截图
+<img width="491" alt="2762518ed390fa605662d5ecc8e5c54" src="https://github.com/user-attachments/assets/275cb4e6-91a2-4e05-8921-1d78420ff3f3" />
+
 
 
 ### Personalized AI Suggestions:
 
 Based on user spending habits, the AI offers personalized and actionable recommendations, such as reducing unnecessary spending.
 
-截图
+<img width="495" alt="3e89966fa4efbe396b8aaab0e25cfea" src="https://github.com/user-attachments/assets/750065d8-4e91-4d78-8730-db7de48a3d90" />
+
 
 ---
 
-## 🛠️ 4.3 Budget Prompt Construction (`BudgetPromptBuilder.java`)
+### 🛠️ 4.3 Budget Prompt Construction (`BudgetPromptBuilder.java`)
 
 - Dynamically constructs structured AI prompts based on users' historical monthly spending data.
 - Requires the AI to respond in a standardized JSON format, immediately followed by clear financial advice.
 - Prompts can be tailored according to user-specific saving goals.
 
-chart上半截图
+<img width="1047" alt="5b175a413c13158e8f77c32c3ab232f" src="https://github.com/user-attachments/assets/2cdd2fc5-48e7-44f3-9ada-643fce7aedfe" />
+
 
 
 ---
