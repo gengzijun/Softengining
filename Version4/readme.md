@@ -19,6 +19,7 @@ We generate the main page by importing data and conducting analysis with AI.
 
 <img width="899" alt="ab2ab1a04df8be2c478e575528964de" src="https://github.com/user-attachments/assets/4be8b1c7-0a5c-441d-8dfa-f7abacac88eb" />
 
+---
 
 ### 📋 1.1 Data Type
 
@@ -46,6 +47,8 @@ or type：
 
 Implements JavaFX's `StringProperty` for real-time binding between data and UI components.
 
+---
+
 ### 🧩 1.2 Interface Structure
 
 - **Left Navigation Bar**
@@ -64,11 +67,14 @@ Implements JavaFX's `StringProperty` for real-time binding between data and UI c
 
 <img width="900" alt="4901d43cade2cdfcebbe535f38a9edf" src="https://github.com/user-attachments/assets/1585ba07-c9cc-4cb5-8d7f-a75213b3ebbd" />
 
+---
+
 ### 🧩 1.3 File export
 The generated file can be exported in the form of a CSV file, which is convenient for sharing and storage.
 
 <img width="911" alt="60c20fb82a9d6a3f42789e048946146" src="https://github.com/user-attachments/assets/40c114a2-7c5d-4f7a-968d-3eb41a42b2ee" />
 
+---
 
 ## 🕰️ 2.History Page (`HistoryPage.java`)
 
@@ -76,6 +82,7 @@ The history page is structurally similar to the main page.
 
 <img width="899" alt="ab2ab1a04df8be2c478e575528964de" src="https://github.com/user-attachments/assets/8878ef58-8bb0-4867-ad5f-222fca6aee7b" />
 
+---
 
 ### 📋 2.1 Data Type
 
@@ -88,12 +95,15 @@ Uses the `DataRecord` class as the base data model, including:
 
 Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 
+---
+
 ### 🧩 2.2 Interface Structure
 
 - **Left Navigation Bar**
   - Provides a month list for loading data by month upon user click.
 
-历史界面照片
+<img width="536" alt="e08d6dcabcadcb41d36a1008e58a64b" src="https://github.com/user-attachments/assets/9be1c572-8a9c-4e95-ba96-f38fb8e48bc2" />
+
 
   - Shows a popup prompt if data for the selected month is not available, instructing users to upload the file.
 
@@ -103,7 +113,9 @@ Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 - **Top Main View**
   - Includes a search and filter section at the top, supporting quick data search by fields (task, date, amount, etc.).
 
- 历史界面图片
+ <img width="536" alt="e08d6dcabcadcb41d36a1008e58a64b" src="https://github.com/user-attachments/assets/fc79bc6e-f268-4e0c-a224-82541cdaaef4" />
+
+---
 
 ## 🕰️ 3. Detail Page 
 
@@ -113,7 +125,8 @@ Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 ### 🆘 3.1 Emergency-Expense Reservation
 If you know you’ll have additional or emergency spending next month, enter the estimated amount into the new **Any Emergency** field and hit **Confirm**. The AI will automatically adjust your monthly consumption budget to reserve that buffer for you.  
 
-白图片1
+![f6b4e1e0c18c205ef13a6d9262ad8bf](https://github.com/user-attachments/assets/c41da1ef-dc31-47ba-937e-1f39718cd0c8)
+
 
 
 ---
@@ -125,7 +138,8 @@ Now when you pick your **Start** and **End** years in the piggy-bank progress pa
 - **Still need** amount  
 - Detailed monthly breakdown in the **Details** section
 
-白图片2
+![ff3e04cc8151e0706539c3ea389d168](https://github.com/user-attachments/assets/af6fe36f-b0fc-4c4f-bbfc-6f563d5164d9)
+
 
 
 ---
@@ -137,7 +151,8 @@ To prevent timeline mistakes, selecting an **End** year earlier than the **Start
 > Please re-enter.  
 This guards against misconfigured goals and keeps your projections accurate.
 
-白图片3
+![0d02f6f74e760a150ce520a52a4da1e](https://github.com/user-attachments/assets/655f6393-135e-4275-81cb-5db5bccee015)
+
 
 
 ---
@@ -154,40 +169,46 @@ Click the **Export Data** button to download a `Saving_data.csv` file containing
 | `endYear`         | Timeline end year                                         |
 | `emergency_amount`| Reserved buffer for emergency or additional expenses      |
 
-白图片4
+![4b073cb1134abd9aa0cc23e1e587c3e](https://github.com/user-attachments/assets/0c3f10fc-fafe-4615-9811-cdc1e9a3c6a5)
 
 
-## 🖼️ 3.5 Personalized savings tips
+---
+
+### 🖼️ 3.5 Personalized savings tips
 The app will, based on the user's consumption habits, savings goals and income situation, provide the user with personalized saving tips.
 
-个人建议图片
+![15aaf7260ec2691c756103de814c7ec](https://github.com/user-attachments/assets/5b684def-c460-45b3-879c-5981c275a944)
+
 
 Users can click on the cover of each tip. After clicking, the corresponding tip page will pop up.
 
-个人建议详细图片
+![1729dbee2744ae7e1bf5b61c4db8870](https://github.com/user-attachments/assets/5a43006d-b7a7-4b62-8ade-d5d0c4ed5f3e)
+
 
 ---
 
 
-## 🗂️ 3.6 Real-time update
+### 🗂️ 3.6 Real-time update
 The information in the "saving goal" page, including the details and progress bar sections, has been changed to be able to update in real time based on the user's input.
 
-白图片
+![9a16ec962b4b0cfd06476e2d102ffe7](https://github.com/user-attachments/assets/834667af-b2ce-46ba-a6d0-cb31a4ce6ed0)
 
-白图片
+![c11b9914184eada184e55b77d1fe5b7](https://github.com/user-attachments/assets/2ec6abe0-0cf0-4bf4-89c0-9751d24f1cea)
+
 
 ---
 
-## 🎏 3.7 Interface simplification
+### 🎏 3.7 Interface simplification
 The original two "confirm" buttons have been changed to a unified "confirm" button. After clicking it, the progress bar can be updated, as well as the target and hasSaved information. Additionally, the emergency value at the end of the data will be passed to the AI for analysis.
 
-白图片
+![5a0673ad662703bdd9ccbf04eaeab21](https://github.com/user-attachments/assets/ea8b81c8-00bb-41a5-bacb-d33e9f390e9c)
+
 
 ---
 
 ## 🕰️ 4. Chart Page
 
-## 📊 4.1Personalized AI Analysis (`AiClassificationResult.java`)
+### 📊 4.1Personalized AI Analysis (`AiClassificationResult.java`)
 
 The AI classification data model includes:
 
@@ -199,16 +220,15 @@ Users can select different time intervals (e.g., quarterly or yearly) to analyze
 
 - **Monthly Analysis:**
 
-月度照片
+<img width="1061" alt="4e90eb09da72623dea051abb209a939" src="https://github.com/user-attachments/assets/e2446a7e-95ea-45c3-9271-b83a01b167d8" />
 
 - **Quarterly Analysis:**
 
-季度照片
+<img width="1061" alt="badc7a6a4a853acbe59c98688771138" src="https://github.com/user-attachments/assets/23476618-0394-42ba-b3f4-766011ab2a60" />
 
 - **Yearly Analysis:**
 
-年度照片
-
+<img width="1061" alt="967d4f3c7045cef6534025ba63363e7" src="https://github.com/user-attachments/assets/611db244-a380-4712-8578-d1d031d475ff" />
 
 After analysis, the AI generates corresponding line charts and pie charts:
 
