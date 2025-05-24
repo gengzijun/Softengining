@@ -1,0 +1,30 @@
+Task,Date,Detail,Amount,Type
+Ex-1,2024-12-31 18:30,Boshiju,10.00,shopping
+Ex-2,2024-12-31 18:12,Boshiju,62.00,shopping
+Ex-3,2024-12-26 14:16,Glenn,35.00,living
+Ex-4,2024-12-24 19:32,BUPT,200.00,living
+Ex-5,2024-12-24 18:14,BUPT,13.00,living
+Ex-6,2024-12-17 16:26,Jiachen,42.00,living
+Ex-7,2024-12-17 16:25,Jiachen,387.00,living
+Ex-8,2024-12-17 16:25,Photo studio,15.00,entertainment
+Ex-9,2024-12-16 16:17,Luckin coffee,12.00,catering
+Ex-10,2024-12-15 20:14,BUPT,12.00,living
+Ex-11,2024-12-15 12:44,Jiachen,21.00,living
+Ex-12,2024-12-13 20:31,Glenn,35.00,living
+Ex-13,2024-12-11 12:56,BUPT,400.00,living
+Ex-14,2024-12-11 12:05,BUPT,29.50,living
+Ex-15,2024-12-10 18:47,DMALL,9.90,shopping
+Ex-16,2024-12-07 12:15,DMALL,26.00,shopping
+Ex-17,2024-12-07 00:13,JD,147.40,shopping
+Ex-18,2024-12-06 18:19,Jinguyuan Dumpling,24.00,catering
+Ex-19,2024-12-04 18:41,BUPT,13.00,living
+Ex-20,2024-12-04 18:30,Wumart,37.00,shopping
+Ex-21,2024-12-04 12:04,DMALL,9.90,shopping
+Ex-22,2024-12-04 11:36,BUPT,15.80,living
+Ex-23,2024-12-04 09:04,BUPT,16.50,living
+Ex-24,2024-12-02 18:51,Tencent,15.00,entertainment
+Ex-25,2024-12-02 18:48,Jiachen,32.00,catering
+Ex-26,2024-12-02 18:48,Jiachen,146.55,catering
+Ex-27,2024-12-01 19:25,BUPT,400.00,living
+Ex-28,2024-12-01 10:33,Meituan,69.78,catering
+Ex-29,2024-12-01 08:40,ICBC,8000.00,income
