@@ -53,26 +53,30 @@ OPENAI_API_KEY=your_openai_key_here
 
 ---
 
-## 5. Build & Run
-### Using Maven：
-mvn clean package
-
-mvn javafx:run
-
-### Direct java Command
-java --module-path $PATH_TO_FX \
-       --add-modules javafx.controls,javafx.fxml \
-       -jar target/app.jar
-
----
-
-## 6. IDE Configuration
-### IntelliJ IDEA
-- Add JDK 17 in Project Structure → SDKs.
-- In your Run Configuration’s VM options, include:--module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml
-### Eclipse
-- In Run Configurations → VM arguments, set the same --module-path and --add-modules values.
-
+## 5. IDE Configuration
+Using compilers like IDE is more convenient. Therefore, in this example, we will introduce the operation method of IDE.
+### Configure the JDK
+- Go to **File → Project Structure → SDKs**.
+- Click **+**, select **JDK**, and point to your JDK 17+ installation directory.
+- Ensure the new SDK appears under **Project → Project SDK**.
+### Set Up JavaFX Libraries
+- Still in **Project Structure → Libraries**, click **+ → Java**, and navigate to your JavaFX SDK `lib` folder.  
+- Name the library (e.g. “JavaFX 21”), then apply.
+### Module Settings  
+- Open **Project Structure → Modules**, select your module, and on the **Dependencies** tab, add the JavaFX library you just created.  
+- In the **Sources** tab, verify that `module-info.java` is recognized—IntelliJ will offer quick-fixes if any `requires` clauses are unresolved.
+### **Run Configuration**  
+- Go to **Run → Edit Configurations…**, click **+ → Application**.  
+ - **Main class**: your `MainApp` launcher.  
+ - **Module classpath**: select your module.  
+- In **VM options**, paste:  
+   ```
+   --module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml
+   ```  
+- Apply and save.
+### Build & Launch  
+   - Use **Build → Build Project** to compile.  
+   - Run via the green ▶️ button or **Run → Run 'YourConfigName'**.  
 ---
 # 🌈Actual operation demonstration
 ## 0. Login Page (`LoginPage.java`)
