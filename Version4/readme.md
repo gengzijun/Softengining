@@ -1,11 +1,12 @@
 # ✨ Overview
 AI intelligent accounting assistant, allowing you to record transactions with just one click and conduct real-time analysis, helping you easily manage your financial health.
 
+
 ## 0. Login Page (`LoginPage.java`)
 - Basic user login interaction
 - Navigates to main dashboard upon entering a username
 
-<img width="397" alt="735bd5d1be03d47352528b89c5894e1" src="https://github.com/user-attachments/assets/f299850d-48b8-4257-8e29-85321f61b96b" />
+<img width="593" alt="2eda123bec04cb2303ac414472c7065" src="https://github.com/user-attachments/assets/e9c3e5dd-0323-4713-9196-a3bb549d48ad" />
 
 ---
 
@@ -13,9 +14,9 @@ AI intelligent accounting assistant, allowing you to record transactions with ju
 ## 🏠 1. Main Page (`MainPage.java`)
 We generate the main page by importing data and conducting analysis with AI.
 
-<img width="899" alt="dfef651c305bd508e764ac7c604454d" src="https://github.com/user-attachments/assets/6b18b9f7-0f04-4c90-aa44-1c6f32a5bb3f" />
+![e29b3c086c9358f7d4adeef7872bc9a](https://github.com/user-attachments/assets/1400e38f-5342-4d00-abf6-b96183d1bd35)
 
-<img width="901" alt="52e8f07a03053796cdf76dbfbfc16bc" src="https://github.com/user-attachments/assets/97950432-3dae-4b26-8683-c2784b2acdd0" />
+![8f1f5f0efe7c7f1b9f283438a1055f9](https://github.com/user-attachments/assets/09e15b82-41db-4f68-8cff-591e53ae363a)
 
 <img width="899" alt="ab2ab1a04df8be2c478e575528964de" src="https://github.com/user-attachments/assets/4be8b1c7-0a5c-441d-8dfa-f7abacac88eb" />
 
@@ -31,12 +32,12 @@ Uses the `Expense` class as the underlying data model, including:
 
 Users can rearrange data by selecting different data criteria such as date：
 
-<img width="355" alt="ffd984d508567814a55223db2ba43b5" src="https://github.com/user-attachments/assets/0e3eaab4-8c8b-4eaf-829c-23d5e2b8814f" />
+<img width="892" alt="7626caf72ae3c5269b7a0fbb7f37bf6" src="https://github.com/user-attachments/assets/a21032d8-03ae-464d-8ba5-416b561d929e" />
 
 
 detail：
 
-<img width="359" alt="8bc3ff7ac9e707ebbaba6a3c8962262" src="https://github.com/user-attachments/assets/4b991e27-14ea-4e59-b2e7-c75add3c09af" />
+<img width="895" alt="05540b18e2eacb60c8a5106a6e0572f" src="https://github.com/user-attachments/assets/825e7979-5e20-494b-a3e6-9f403fd21fb9" />
 
 
 or type：
@@ -102,18 +103,17 @@ Each field uses JavaFX's `SimpleStringProperty` for real-time UI data binding.
 - **Left Navigation Bar**
   - Provides a month list for loading data by month upon user click.
 
-<img width="536" alt="e08d6dcabcadcb41d36a1008e58a64b" src="https://github.com/user-attachments/assets/9be1c572-8a9c-4e95-ba96-f38fb8e48bc2" />
+<img width="895" alt="8df838e636f91126a69d918090ef2db" src="https://github.com/user-attachments/assets/9aa2b8d9-75ed-468b-a068-bb69f7cfb829" />
 
 
   - Shows a popup prompt if data for the selected month is not available, instructing users to upload the file.
 
-<img width="448" alt="edf99df5e68ca733a52b72b42239f51" src="https://github.com/user-attachments/assets/ba97e317-8362-4f68-b0bd-1885f9ee15b9" />
-
+<img width="896" alt="b3447ff3cc0a9aaa71a3457aaafc0aa" src="https://github.com/user-attachments/assets/3bc1bca9-1869-475c-b55f-4aec1d10f900" />
 
 - **Top Main View**
   - Includes a search and filter section at the top, supporting quick data search by fields (task, date, amount, etc.).
 
- <img width="536" alt="e08d6dcabcadcb41d36a1008e58a64b" src="https://github.com/user-attachments/assets/fc79bc6e-f268-4e0c-a224-82541cdaaef4" />
+ <img width="895" alt="8df838e636f91126a69d918090ef2db" src="https://github.com/user-attachments/assets/fbd008b5-484e-4b38-a7d4-8c5741212cec" />
 
 ---
 
