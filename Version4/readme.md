@@ -1,7 +1,80 @@
-# ✨ Overview
-AI intelligent accounting assistant, allowing you to record transactions with just one click and conduct real-time analysis, helping you easily manage your financial health.
+# ✨  Overview
+AI-Powered Intelligent Accounting Assistant is your all-in-one financial companion. With a single tap, you can instantly log every income and expense—no more tedious manual entry—while our built-in AI engine analyzes your cash flow in real time. Watch as it automatically:
 
+- Categorizes each transaction (e.g., groceries, utilities, entertainment)
 
+- Detects unusual spending patterns and flags potential savings opportunities
+
+- Predicts upcoming bills based on your historical data
+
+- Visualizes your budget with interactive charts and trend lines
+
+- Generates monthly health reports highlighting where you’re thriving and where you can optimize
+
+Whether you’re planning for a big purchase, setting aside an emergency fund, or just curious about your day-to-day spending habits, our assistant gives you instant, actionable insights—so you stay one step ahead of your money, stress less, and build a healthier financial future effortlessly.
+# ✅Runtime Environment & Configuration
+
+## 1. Java Environment
+- **JDK 17** or higher (to support the Java module system)  
+- Make sure `java` and `javac` are on your system `PATH`
+
+---
+
+## 2. JavaFX SDK
+1. Download the JavaFX SDK (recommended version 21+) from the [Gluon website](https://gluonhq.com/products/javafx/).  
+2. Unzip it anywhere on your machine and note the `lib` directory, for example:  /path/to/javafx-sdk-21/lib
+
+---
+
+## 3. External Library Dependencies
+This project uses the Java module system. The following modules/dependencies are declared in module-info.java. You can manage versions via Maven or Gradle:
+- javafx.controls
+- javafx.fxml
+- Jackson Databind (com.fasterxml.jackson.databind)
+- ControlsFX (org.controlsfx.controls)
+- FormsFX (com.dlsc.formsfx)
+- BootstrapFX (org.kordamp.bootstrapfx.core)
+- FXGL (game engine, com.almasb.fxgl.all)
+- LangChain4j OpenAI (langchain4j.open.ai)
+- dotenv-java (io.github.cdimascio.dotenv.java)
+- OpenCSV (com.opencsv)
+
+Tip:
+- For Maven, add each dependency to your pom.xml.
+- For Gradle, declare them under implementation in build.gradle.
+
+---
+
+## 4. Environment Variables
+This project uses dotenv-java to load sensitive settings (e.g. API keys) from a .env file.
+
+Create a .env in the project root (or copy .env.example) with entries like:
+OPENAI_API_KEY=your_openai_key_here
+
+---
+
+## 5. Build & Run
+### Using Maven：
+mvn clean package
+
+mvn javafx:run
+
+### Direct java Command
+java --module-path $PATH_TO_FX \
+       --add-modules javafx.controls,javafx.fxml \
+       -jar target/app.jar
+
+---
+
+## 6. IDE Configuration
+### IntelliJ IDEA
+- Add JDK 17 in Project Structure → SDKs.
+- In your Run Configuration’s VM options, include:--module-path /path/to/javafx-sdk-21/lib --add-modules javafx.controls,javafx.fxml
+### Eclipse
+- In Run Configurations → VM arguments, set the same --module-path and --add-modules values.
+
+---
+# 🌈Actual operation demonstration
 ## 0. Login Page (`LoginPage.java`)
 - Basic user login interaction
 - Navigates to main dashboard upon entering a username
@@ -9,7 +82,6 @@ AI intelligent accounting assistant, allowing you to record transactions with ju
 <img width="593" alt="2eda123bec04cb2303ac414472c7065" src="https://github.com/user-attachments/assets/e9c3e5dd-0323-4713-9196-a3bb549d48ad" />
 
 ---
-
 
 ## 🏠 1. Main Page (`MainPage.java`)
 We generate the main page by importing data and conducting analysis with AI.
